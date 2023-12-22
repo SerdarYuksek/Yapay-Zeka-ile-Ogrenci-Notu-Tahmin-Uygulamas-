@@ -1,0 +1,66 @@
+<html>
+<head>
+<style>
+
+ .button {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        border: 2px solid #3498db;
+        color: #3498db;
+        border-radius: 5px;
+        transition: background-color 0.3s, color 0.3s;
+        cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #3498db;
+            color: #fff;
+        }
+
+body {
+  background-image: url("{{url_for('static', filename='exambackground.jpg')}}");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+    display: inline-block;
+    background-color: rgb(56, 0, 0);
+    color: white;
+    padding: 5px;
+    margin-top: 2%;
+}
+
+h3{
+   background-color: white;
+  color: white;
+}
+
+</style>
+</head>
+<body>
+<center>
+
+
+<h1>Öğrenci Sınav Notlarını Tahmin Etme</h1>
+<pre>
+<form action="{{ url_for('predict')}}"method="post">
+
+<input type='text' name="area" placeholder="Çalışma Süreinizi Giriniz" required="required"/>
+
+<button type="submit" class="button">Sınav Notunu Tahmin Et</button>
+</form>
+<textarea readonly>
+	{{prediction_text}}
+</textarea>
+</pre>
+</center>
+</body>
+</html>
