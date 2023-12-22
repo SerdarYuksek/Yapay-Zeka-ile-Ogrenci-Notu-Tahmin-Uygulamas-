@@ -27,4 +27,12 @@ To run the project in your system, type command in your command prompt or termin
 <p>
     <img src="screenshots/Capture.PNG"/>
 </p>
-       
+
+Saatlik Çalışma Süresine Göre Not Tahmini Uygulaması
+Bu uygulama, öğrencilerin günlük çalışma saatlerine dayanarak sınav notlarını tahmin eden bir regresyon modelini kullanır. Proje, öğrencilerin günlük çalışma sürelerini girebilmelerine olanak tanır ve bu verilere dayanarak öğrencinin muhtemel sınav notunu tahmin eder.
+
+Özellikler
+Veri Girişi: Kullanıcılar, öğrencilerin günlük çalışma saatlerini girebilirler.
+Not Tahmini: Uygulama, girilen günlük çalışma saatlerine dayanarak öğrencinin muhtemel sınav notunu tahmin eder.
+![image](https://github.com/SerdarYuksek/Yapay-Zeka-ile-Ogrenci-Notu-Tahmin-Uygulamas-/assets/129522255/d8b02015-c0ba-4038-85be-7202e6ebcef9)
+
